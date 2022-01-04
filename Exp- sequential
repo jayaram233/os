@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<string.h>
+Main() 
+{ 
+  int i,j,n,size[20],sblock[20],eblock[20];
+  chat name[20];
+  Printf("enter no.of files:") ;
+  scanf("%d",&n) ;
+  Printf("enter file name and size and starting block :") ;
+  for(I=0;I<n;I++) 
+  {
+    Scanf("%c %d %d",&name[i],&size[i],&sblock[i]);
+  }
+  for(I=0;I<n;I++)
+  {
+    eblock[i]=sblock[i]+size[i];
+  }
+  Printf("file allocation table \n") ;
+  Printf("name size startblock endblock\n") ;
+  For(I=0;I<n;I++) 
+  {
+   Printf("%c\t%d\t", name[i], size[i]) ;
+   Printf("%d\t%d", sblock[i], eblock[I]) ;
+   Printf("\n") ;
+   }
+}
